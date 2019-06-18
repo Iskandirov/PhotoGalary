@@ -12967,11 +12967,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Redux\\ReactNotification-master\\ReactNotification-master\\Backend\\Backend\\Backend.csproj",
+      "projectUniqueName": "D:\\Redux\\reactByPHP-master\\Backend\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\Redux\\ReactNotification-master\\ReactNotification-master\\Backend\\Backend\\Backend.csproj",
+      "projectPath": "D:\\Redux\\reactByPHP-master\\Backend\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\user.itstep\\.nuget\\packages\\",
-      "outputPath": "D:\\Redux\\ReactNotification-master\\ReactNotification-master\\Backend\\Backend\\obj\\",
+      "outputPath": "D:\\Redux\\reactByPHP-master\\Backend\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

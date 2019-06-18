@@ -12,3 +12,17 @@ D:\Redux\ReactNotification-master\ReactNotification-master\Backend\Backend\obj\D
 D:\Redux\ReactNotification-master\ReactNotification-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.RazorTargetAssemblyInfo.cache
 D:\Redux\ReactNotification-master\ReactNotification-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.dll
 D:\Redux\ReactNotification-master\ReactNotification-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.pdb
+D:\Redux\reactByPHP-master\Backend\Backend\bin\Debug\netcoreapp2.2\Backend.deps.json
+D:\Redux\reactByPHP-master\Backend\Backend\bin\Debug\netcoreapp2.2\Backend.runtimeconfig.json
+D:\Redux\reactByPHP-master\Backend\Backend\bin\Debug\netcoreapp2.2\Backend.runtimeconfig.dev.json
+D:\Redux\reactByPHP-master\Backend\Backend\bin\Debug\netcoreapp2.2\Backend.dll
+D:\Redux\reactByPHP-master\Backend\Backend\bin\Debug\netcoreapp2.2\Backend.pdb
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.csprojAssemblyReference.cache
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.csproj.CoreCompileInputs.cache
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.RazorAssemblyInfo.cache
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.RazorAssemblyInfo.cs
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.AssemblyInfoInputs.cache
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.AssemblyInfo.cs
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.RazorTargetAssemblyInfo.cache
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.dll
+D:\Redux\reactByPHP-master\Backend\Backend\obj\Debug\netcoreapp2.2\Backend.pdb

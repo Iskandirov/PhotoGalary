@@ -12,26 +12,41 @@ namespace Backend.Controllers
     [Route("api/[controller]")]
     public class AnimalController : ControllerBase
     {
-        // GET api/animal/search
-        [HttpGet("search")]
-        public IActionResult Get()
-        {
-            List<AnimalViewModel> model = new List<AnimalViewModel>
+        static List<AnimalViewModel> data = new List<AnimalViewModel>
             {
                 new AnimalViewModel
                 {
-                    Id = 4,
+                    Id = 1,
                     Name = "Верблюд",
                     Image = "https://o-prirode.ru/wp-content/uploads/2017/10/verbljud-696x435.jpg",
                 },
                 new AnimalViewModel
                 {
-                    Id = 4,
+                    Id = 2,
                     Name = "Білка",
                     Image = "http://www.zoolog.com.ua/ssavci/zv.gif",
                 },
             };
-            return Ok(model);
+        // GET api/animal/search
+        [HttpGet("search")]
+        public IActionResult Get()
+        {
+          
+            return Ok(data);
+        }
+
+        // GET api/animal/add
+        [HttpPost("add")]
+        public IActionResult Post([FromBody]AnimalAddViewModel model)
+        {
+            Random rand = new Random();
+            data.Add(new AnimalViewModel
+            {
+                Id = rand.Next(10, 33432),
+                Name = model.Name,
+                Image = model.Image
+            });
+            return Ok();
         }
 
     }

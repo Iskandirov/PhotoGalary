@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import LoginPage from './components/LoginPage';
 import AnimalWidget from './components/animal';
 import ProductWidget from './components/product/';
+import AnimalCreate from './components/animal/post';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={LoginPage} />
         <Route exact path='/animal' component={AnimalWidget} />
+        <Route exact path='/animal/add' component={AnimalCreate} />
         <Route exact path='/product' component={ProductWidget} /> 
       </Switch>
     </Layout>
