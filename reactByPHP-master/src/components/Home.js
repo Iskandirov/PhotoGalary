@@ -37,7 +37,7 @@ class Home extends Component {
                 <Notifications />
                 <h1>Home Page {count}</h1>
                 <button onClick={() => notify('JONE', '#28a745')}>Click me jone</button>
-                <button onClick={() => notify('Помилка при роботі', '#dc3545')}>Помлка!!!!!!!!</button>
+                <button onClick={() => notify('Помилка при роботі', '#dc3545')}>Помилка!!!!!!!!</button>
 
                 <button className="btn btn-success" onClick={this.btnIncrementCounter}>Counter++</button>
 

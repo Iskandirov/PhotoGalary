@@ -1,6 +1,8 @@
+import React, { Component } from 'react';
 import AnimalService from "./animalService";
 import update from '../../helpers/update';
-
+import classnames from 'classnames';
+import '../Modal.css';
 
 export const GET_LIST_DATA_STARTED = "animal/GET_LIST_DATA_STARTED";
 export const GET_LIST_DATA_SUCCESS = "animal/GET_LIST_DATA_SUCCESS";
@@ -12,19 +14,25 @@ const initialState = {
         error: false,
         loading: false
     },
+    isShowModal: false,
 }
-
 export const animalReducer = (state = initialState, action) => {
     let newState = state;
-
     switch (action.type) {
         case GET_LIST_DATA_STARTED: {
-            newState = update.set(state, 'list.loading', true);
+            // const { isShowModal } = state.isShowModal;
+            // newState = update.set(state, 'list.loading', true);
+            // this.setState({ isShowModal: !isShowModal });
+            // return(
+            //     <div className={classnames('custommodal', { 'open': isShowModal })}></div>
+            // );
             //newState = Object.assign({}, state, {list: {data: state.list.data, loading: true, error: state.list.error } } ); //update.set(state, 'list.loading', true);
             break;
         }
         case GET_LIST_DATA_SUCCESS: {
-            newState = update.set(state, 'list.loading', false);
+            // const { isShowModal } = state.isShowModal;
+            // this.setState({ isShowModal: !isShowModal });
+            // newState = update.set(state, 'list.loading', false);
             newState = update.set(newState, 'list.data', action.payload.data);
             break;
         }
