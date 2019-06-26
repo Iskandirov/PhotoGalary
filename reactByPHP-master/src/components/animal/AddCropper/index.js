@@ -13,14 +13,28 @@ class AnimalAddCropperWidgetContainer extends Component {
         super(props);
         this.state = {
             name: '',
-            image: 'https://getstamped.co.uk/wp-content/uploads/WebsiteAssets/Placeholder.jpg',
+            image: null,
             src: '',
             isCropped: false,
         };
     }
     onSubmitForm = (e) => {
         e.preventDefault();
-      
+        const model = {
+            name: this.state.name,
+            image: this.state.image
+        };
+
+        axios.post('https://localhost:44368/api/animal/add-base64', model)
+            .then(
+                (resp) => {
+                    console.log('--success post--', resp.data);
+                    this.props.history.push('/animal');
+                },
+                (err) => {
+                    console.log('--err problem---', err);
+                }
+            );
     }
 
     onChangeInput = (e) => {
@@ -64,21 +78,7 @@ class AnimalAddCropperWidgetContainer extends Component {
         this.setState({ isCropped: false });
         console.log('----submit form---');
 
-        const model = {
-            name: this.state.name,
-            image: this.state.image
-        };
-       
-        axios.post('https://localhost:44368/api/animal/add', model)
-        .then(
-            (resp) => {
-                console.log('--success post--', resp.data);
-                this.props.history.push('/animal');
-            },
-            (err) => {
-                console.log('--err problem---', err);
-            }
-        );
+     
     }
     onChangeAngleCropperLeft = (e) => {
         e.preventDefault();
@@ -105,6 +105,7 @@ class AnimalAddCropperWidgetContainer extends Component {
         // base64Img.base64({image}, function(err, data) {
 
         // })
+        const imgDef = image !== null ? image : 'https://getstamped.co.uk/wp-content/uploads/WebsiteAssets/Placeholder.jpg';
         return (
             <React.Fragment>
                 <h1>Додати фото в галерею кропер</h1>
@@ -122,13 +123,15 @@ class AnimalAddCropperWidgetContainer extends Component {
                     <div className="form-group" >
                         <img className="imgUpload"
                             onClick={this.onSelectImage}
-                            src={image} />
+                            src={imgDef} />
 
                         <input ref={input => this.inputFileElement = input}
                             type="file"
                             onChange={this.onChangeSelecFile}
                             className="d-none" />
                     </div>
+
+                    <button type="submit" className="btn btn-info">Додати</button>
                 </form>
 
                 <div className={classnames('croppermodal', { 'open': isCropped })}>
